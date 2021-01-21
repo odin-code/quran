@@ -13,6 +13,7 @@ class ClaudMedia extends App {
         <Component {...pageProps} />
       </>
     );
+    
   }
 }
 

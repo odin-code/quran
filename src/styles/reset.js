@@ -154,16 +154,6 @@ margin-left: 240px !important;
   body {
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif !important;
-    @media (min-width: 992px) {
-      background: #f2f4f7 !important;
-    }
-    @media (min-width: 768px) and (max-width: 991px) {
-      background: #fff !important;
-    }
-    @media (max-width: 414px) {
-      background: #fff !important;
-    }
   }
 `}`;
 

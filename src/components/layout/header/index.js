@@ -1,26 +1,60 @@
-import React from "react";
-import { Wrapper, Nav } from "./style";
+import React, { useState, useEffect } from "react";
+import { Wrapper } from "./style";
 import Link from "next/link";
 
 const Navbar = () => {
+  const [navbar, setnav] = useState(false);
+
+  useEffect(function mount() {
+    function changeBackground() {
+      console.log(window.scrollY);
+      if (window.scrollY >= 90) {
+        setnav(true);
+      } else {
+        setnav(false);
+      }
+    }
+    window.addEventListener("scroll", changeBackground);
+
+    return function unMount() {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  });
+
   return (
     <>
       <Wrapper>
-        <div className="container">
-          <nav className="navbar">
-            <Link href="#">
-              <a className="search-bar">
-                <div className="search-bar__content">
-                  <img src="/img/search-bar.svg" />
-                  <span>Kemana anda ingin pergi</span>
-                </div>
-              </a>
+        <div className={navbar ? "header active-header" : "header"}>
+          <div className="container">
+            <Link href="/">
+              <a className="logo">contoh logo</a>
             </Link>
-          </nav>
+            <nav className="d-navbar">
+              <ul>
+                <li>
+                  <Link href="/">
+                    <a>Home</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/works">
+                    <a>Work</a>
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            <nav className="m-navbar"></nav>
+            <div className="btn">
+              <Link href="">
+                <a> Let's Talk</a>
+              </Link>
+            </div>
+          </div>
         </div>
       </Wrapper>
     </>
   );
+  return null;
 };
 
 export default Navbar;

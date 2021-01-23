@@ -1,37 +1,82 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  height: auto;
-  left: 0px;
-  top: 0px;
-  background: #262c7c;
-  width: 100%;
-  padding: 15px;
-  position: fixed;
-  z-index: 9;
-  .navbar {
-    .search-bar {
-      &__content {
-        background: #ffffff;
-        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.08);
-        border-radius: 24px;
-        padding: 9px 15px;
+  .active-header {
+    background-color: #5B7CFD;
+  }
+  .header {
+    height: auto;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding: 35px 15px 15px 15px;
+    z-index: 9;
+    height: 95px;
+    position: fixed;
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .btn {
+      a {
+        width: 113px;
+        height: 40px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+      }
+    }
+    .d-navbar {
+      width: 65%;
+      text-align: right;
+      .active {
+        background: #fff;
+      }
+      ul {
+        padding: 0px;
         display: flex;
-        img {
-          width: 14px;
-          height: 14px;
-          margin-top: 4px;
+
+        justify-content: flex-end;
+        li {
+          margin-right: 41px;
+          &:last-child {
+            margin: 0px;
+          }
+          a {
+            font-family: "Roboto";
+            color: #cccccc;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration: none;
+          }
         }
-        span {
-          display: block;
-          margin-left: 13px;
-          font-family: "Nunito";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 22px;
-          color: #8e8e93;
-        }
+      }
+      @media (min-width: 992px) {
+        display: block;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+      }
+      @media (max-width: 414px) {
+        display: none;
+      }
+    }
+    .m-navbar {
+      @media (min-width: 992px) {
+        display: none;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+      }
+      @media (max-width: 414px) {
+        display: block;
       }
     }
   }

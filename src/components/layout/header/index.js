@@ -43,7 +43,7 @@ const Navbar = () => {
               </ul>
             </nav>
             <nav className="m-navbar"></nav>
-            <div className="btn">
+            <div className="btn-header">
               <Link href="">
                 <a className={navbar ? "btn-active" : ""}> Let's Talk</a>
               </Link>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   .active-header {
-    background-color: #5B7CFD;
+    background-color: #464ACD;
   }
   .header {
     height: auto;
@@ -17,7 +17,11 @@ export const Wrapper = styled.div`
       display: flex;
       justify-content: space-between;
     }
-    .btn {
+    .btn-header {
+      .btn-active {
+        background: #5B7CFD !important;
+        color: #fff !important;
+      }
       a {
         width: 113px;
         height: 40px;

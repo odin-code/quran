@@ -7,7 +7,6 @@ const Navbar = () => {
 
   useEffect(function mount() {
     function changeBackground() {
-      console.log(window.scrollY);
       if (window.scrollY >= 90) {
         setnav(true);
       } else {
@@ -46,7 +45,7 @@ const Navbar = () => {
             <nav className="m-navbar"></nav>
             <div className="btn">
               <Link href="">
-                <a> Let's Talk</a>
+                <a className={navbar ? "btn-active" : ""}> Let's Talk</a>
               </Link>
             </div>
           </div>

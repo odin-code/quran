@@ -4,6 +4,8 @@ import StyleReset from "../styles/reset";
 import { GlobalStyle } from "../styles/global";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
 class ClaudMedia extends App {
   render() {
     const { Component, pageProps } = this.props;

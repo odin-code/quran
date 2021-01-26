@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import { BodyWrapper } from "./style";
 import Header from "./header";
 import Footer from "./footer";
 
 const Layout = ({ children }) => {
+
   return (
     <>
       <Head>
@@ -38,7 +39,7 @@ const Layout = ({ children }) => {
           <main>
             {children}
           </main>
-          {/* <Footer /> */}
+          <Footer />
       </BodyWrapper>
     </>
   );

@@ -6,36 +6,15 @@ const Footer = () => {
   return (
     <>
       <Wrapper>
-        <ul>
-          <li>
-            <Link href="#">
-              <a>
-                <img src="/img/home.png" />
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <a>
-                <img src="/img/like.png" />
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <a>
-                <img src="/img/notification.png" />
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <a>
-              <img src="/img/user.png" />
-              </a>
-            </Link>
-          </li>
-        </ul>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="copyright">
+                <span>Copyright PT Claudmedia Indonesia. 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </Wrapper>
     </>
   );

@@ -244,4 +244,105 @@ export const Wrapper = styled.div`
       }
     }
   }
+  .section-5 {
+    &_content {
+      text-align: center;
+      display: block;
+      .desc {
+        margin-bottom: 80px;
+        h4 {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 56px;
+          text-align: center;
+          color: #333333;
+          padding-bottom: 40px;
+          width: 60%;
+          margin: auto;
+        }
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 32px;
+          text-align: center;
+          color: #333333;
+          margin: 0px auto;
+          width: 60%;
+        }
+      }
+      .slider-5 {
+        .slide-list {
+          display: flex;
+          justify-content: center;
+          &_item {
+            margin-right: 30px;
+            &:last-child {
+              margin: 0px;
+            }
+            img {
+              width: 170px;
+              display: block;
+            }
+          }
+        }
+      }
+      .drop-email {
+        height: 320px;
+        border-radius: 4px;
+        background: url(/img/bg-send.png);
+        padding: 80px 50px 0px 50px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-top: 120px;
+        .decs {
+          span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 56px;
+            display: block;
+            color: #ffffff;
+          }
+        }
+        .form-email {
+          margin-top: 30px;
+          .select-input {
+            background: #ffffff;
+            border-radius: 4px;
+            display: flex;
+            width: 80%;
+            padding: 10px;
+            margin: 0 auto;
+            input {
+              width: 100%;
+              border: 0px;
+              outline: 0px;
+            }
+          }
+          .ant-btn-primary {
+            background: #5b7cfd;
+            border-radius: 4px;
+            img {
+              width: 12px;
+              height: 12px;
+              margin-right: 12px;
+            }
+            span {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
 `;

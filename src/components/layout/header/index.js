@@ -44,7 +44,7 @@ const Navbar = () => {
             </nav>
             <nav className="m-navbar"></nav>
             <div className="btn-header">
-              <Link href="">
+              <Link href="https://api.whatsapp.com/send?phone=81932622629&text=Assalamu'alaikum%20,%20Saya%20mendapatkan%20info%20dari%20website%20claudmedia">
                 <a className={navbar ? "btn-active" : ""}> Let's Talk</a>
               </Link>
             </div>

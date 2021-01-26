@@ -1,6 +1,6 @@
 // Vendors
-import React from "react";
-
+import React, { useState } from "react";
+import { Button } from "antd";
 // Next
 import Head from "next/head";
 import Link from "next/link";
@@ -10,6 +10,8 @@ import { Wrapper } from "./style";
 //style
 
 export default function Home({ appName }) {
+  const [whatsap, setwhatsap] = useState("https://api.whatsapp.com/send?phone=81932622629&text=Assalamu'alaikum%20,%20Saya%20mendapatkan%20info%20dari%20website%20claudmedia");
+
   return (
     <>
       <Head>
@@ -28,8 +30,8 @@ export default function Home({ appName }) {
                   production for Website & Mobile Development.
                 </p>
                 <div className="btn-content">
-                  <Link href="#">
-                    <a>Let's Talk</a>
+                  <Link href={whatsap}>
+                    <a target="_blank">Let's Talk</a>
                   </Link>
                 </div>
               </div>
@@ -93,8 +95,8 @@ export default function Home({ appName }) {
                   doloremque laudantium.
                 </p>
                 <div className="btn-content">
-                  <Link href="#">
-                    <a>Let's Talk</a>
+                  <Link href={whatsap}>
+                    <a target="_blank" >Let's Talk</a>
                   </Link>
                 </div>
               </div>
@@ -164,6 +166,35 @@ export default function Home({ appName }) {
                     In oculis quidem exercitus quid ex ea voluptate et impetus
                     quo pertineant non numquam
                   </p>
+                </div>
+                <div className="slider-5">
+                  <div className="slide-list">
+                    <div className="slide-list_item">
+                      <img src="/img/client/sariayu-logo.png" />
+                    </div>
+                    <div className="slide-list_item">
+                      <img src="/img/client/stickearn.png" />
+                    </div>
+                  </div>
+                </div>
+                <div className="drop-email">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="decs">
+                        <span>Are you interested for using our services?</span>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-email">
+                        <div className="select-input">
+                          <input placeholder="Drop your email here..." /> 
+                          <Button type="primary">
+                            <img src="/img/ic-send.png"/>
+                            Send</Button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

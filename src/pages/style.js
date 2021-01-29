@@ -66,7 +66,7 @@ export const Wrapper = styled.div`
           color: #5b7cfd;
           margin-bottom: 20px;
         }
-        h3 {
+        h2 {
           font-family: "Roboto";
           font-style: normal;
           font-weight: bold;
@@ -136,7 +136,7 @@ export const Wrapper = styled.div`
       width: 50%;
       float: right;
       padding-top: 130px;
-      h3 {
+      h2 {
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;

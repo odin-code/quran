@@ -44,7 +44,7 @@ export default function Home({ appName }) {
                   <div className="col-md-6">
                     <div className="content-1">
                       <h4>Our Service</h4>
-                      <h3>Create your awesome digital product with us.</h3>
+                      <h2>Create your awesome digital product with us.</h2>
                       <p>
                         Si sine causa, mox videro; interea hoc epicurus in bonis
                         sit numeranda nec me tamen laudandis maioribus meis
@@ -57,21 +57,21 @@ export default function Home({ appName }) {
                     <div className="content-2">
                       <div className="content-2_list">
                         <div className="content-2_list-item">
-                          <img src="/img/web-dev.png" />
+                          <img src="/img/web-dev.png" alt="Web Development" title="Web Development" />
                           <div className="desc">
                             <h5>Web Development</h5>
                             <span>lorem lorem ipusma</span>
                           </div>
                         </div>
                         <div className="content-2_list-item">
-                          <img src="/img/mobile-dev.png" />
+                          <img src="/img/mobile-dev.png" alt="Mobile Development" title="Mobile Development" />
                           <div className="desc">
                             <h5>Mobile Development</h5>
                             <span>lorem lorem ipusma</span>
                           </div>
                         </div>
                         <div className="content-2_list-item">
-                          <img src="/img/brand-dev.png" />
+                          <img src="/img/brand-dev.png" alt="Branding Identity" title="Branding Identity" />
                           <div className="desc">
                             <h5>Branding Identity</h5>
                             <span>lorem lorem ipusma</span>
@@ -87,7 +87,7 @@ export default function Home({ appName }) {
           <div className="section-3">
             <div className="container">
               <div className="section-3_content">
-                <h3>Transform your business with us right now</h3>
+                <h2>Transform your business with us right now</h2>
                 <p>
                   Si sine causa, mox videro; interea hoc epicurus in bonis sit
                   numeranda nec me tamen laudandis maioribus meis corrupisti nec
@@ -115,7 +115,7 @@ export default function Home({ appName }) {
                       </span>
                       <div className="desc-list">
                         <div className="desc-list_item">
-                          <img src="/img/experience.png" />
+                          <img src="/img/experience.png" alt="Experience" title="Experience"/>
                           <div className="content">
                             <h5>Experience</h5>
                             <p>
@@ -125,7 +125,7 @@ export default function Home({ appName }) {
                           </div>
                         </div>
                         <div className="desc-list_item">
-                          <img src="/img/comfortable.png" />
+                          <img src="/img/comfortable.png" alt="Comfortable" title="Comfortable"/>
                           <div className="content">
                             <h5>Comfortable</h5>
                             <p>
@@ -135,7 +135,7 @@ export default function Home({ appName }) {
                           </div>
                         </div>
                         <div className="desc-list_item">
-                          <img src="/img/easy.png" />
+                          <img src="/img/easy.png" alt="Easy Communication" title="Easy Communication"/>
                           <div className="content">
                             <h5>Easy Communication</h5>
                             <p>
@@ -151,6 +151,7 @@ export default function Home({ appName }) {
                     <img
                       src="/img/bitmap.png"
                       className="img-fluid img-sction-4"
+                      alt="bitmap" title="bitmap"
                     />
                   </div>
                 </div>
@@ -170,10 +171,10 @@ export default function Home({ appName }) {
                 <div className="slider-5">
                   <div className="slide-list">
                     <div className="slide-list_item">
-                      <img src="/img/client/sariayu-logo.png" />
+                      <img src="/img/client/sariayu-logo.png" alt="sariayu martathilaar" title="sariayu martathilaar"/>
                     </div>
                     <div className="slide-list_item">
-                      <img src="/img/client/stickearn.png" />
+                      <img src="/img/client/stickearn.png" alt="stickearn" title="stickearn"/>
                     </div>
                   </div>
                 </div>
@@ -189,7 +190,7 @@ export default function Home({ appName }) {
                         <div className="select-input">
                           <input placeholder="Drop your email here..." /> 
                           <Button type="primary">
-                            <img src="/img/ic-send.png"/>
+                            <img src="/img/ic-send.png" alt="kirim pesan" title="kirim pesan"/>
                             Send</Button>
                         </div>
                       </div>

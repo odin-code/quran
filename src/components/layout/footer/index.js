@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="copyright">
-                <span>Copyright PT Claudmedia Indonesia. 2021</span>
+                <span>Copyright PT Claudmedia Indonesia. &copy;2021</span>
               </div>
             </div>
           </div>

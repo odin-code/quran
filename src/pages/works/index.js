@@ -73,7 +73,7 @@ const Works = () => {
                                       <div class="title-project">
                                         <p>TurEZ</p>
                                       </div>
-                                      <a href="#"></a>
+                                      <a href="https://turez.id/"></a>
                                     </figure>
                                   </div>
                                 </div>
@@ -119,7 +119,7 @@ const Works = () => {
                                       <div class="title-project">
                                         <p>Sariayu</p>
                                       </div>
-                                      <a href="#"></a>
+                                      <a href="https://sariayu.com/"></a>
                                     </figure>
                                   </div>
                                 </div>
@@ -173,7 +173,7 @@ const Works = () => {
                                       <div class="title-project">
                                         <p>Kotex</p>
                                       </div>
-                                      <a href="#"></a>
+                                      <a href="https://kotexduniacewe.com/"></a>
                                     </figure>
                                   </div>
                                 </div>
@@ -241,7 +241,7 @@ const Works = () => {
                                       <div class="title-project">
                                         <p>Sariayu</p>
                                       </div>
-                                      <a href="#"></a>
+                                      <a href="https://sariayu.com/"></a>
                                     </figure>
                                   </div>
                                 </div>
@@ -279,7 +279,7 @@ const Works = () => {
                                       <div class="title-project">
                                         <p>TurEZ</p>
                                       </div>
-                                      <a href="#"></a>
+                                      <a href="https://turez.id/"></a>
                                     </figure>
                                   </div>
                                 </div>
@@ -302,7 +302,7 @@ const Works = () => {
                                       <div class="title-project">
                                         <p>Sariayu</p>
                                       </div>
-                                      <a href="#"></a>
+                                      <a href="https://sariayu.com/"></a>
                                     </figure>
                                   </div>
                                 </div>
@@ -356,7 +356,7 @@ const Works = () => {
                                       <div class="title-project">
                                         <p>Kotex</p>
                                       </div>
-                                      <a href="#"></a>
+                                      <a href="https://kotexduniacewe.com/"></a>
                                     </figure>
                                   </div>
                                 </div>

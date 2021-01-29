@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Wrapper } from "./style";
 import Link from "next/link";
+import ActiveLink from "../../activeLink";
 
 const Navbar = () => {
   const [navbar, setnav] = useState(false);
@@ -26,19 +27,21 @@ const Navbar = () => {
         <div className={navbar ? "header active-header" : "header"}>
           <div className="container">
             <Link href="/">
-              <a className="logo">contoh logo</a>
+              <a className="logo">
+                <img src="/logo.png" />
+              </a>
             </Link>
             <nav className="d-navbar">
               <ul>
                 <li>
-                  <Link href="/">
+                  <ActiveLink ActiveLink activeClassName="active-nav" href="/">
                     <a>Home</a>
-                  </Link>
+                  </ActiveLink>
                 </li>
                 <li>
-                  <Link href="/works">
+                  <ActiveLink ActiveLink activeClassName="active-nav" href="/works">
                     <a>Work</a>
-                  </Link>
+                  </ActiveLink>
                 </li>
               </ul>
             </nav>

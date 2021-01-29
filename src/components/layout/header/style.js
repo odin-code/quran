@@ -13,6 +13,15 @@ export const Wrapper = styled.div`
     z-index: 9;
     height: 95px;
     position: fixed;
+    .logo {
+      img {
+        height: 47px;
+        width: 155px;
+        left: 0px;
+        top: -11px;
+        position: relative;
+      }
+    }
     .container {
       display: flex;
       justify-content: space-between;
@@ -36,6 +45,7 @@ export const Wrapper = styled.div`
         line-height: 16px;
         text-align: center;
       }
+     
     }
     .d-navbar {
       width: 65%;
@@ -61,6 +71,11 @@ export const Wrapper = styled.div`
             font-size: 16px;
             line-height: 19px;
             text-decoration: none;
+            
+          }
+          .active-nav {
+            color #fff;
+            font-weight: 600;
           }
         }
       }

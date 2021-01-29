@@ -24,6 +24,7 @@ export default class MyDocument extends Document {
       <html lang="id">
         <Head>
           <title>Claudmedia</title>
+          <meta name="google-site-verification" content="_zZfgHu-2NjAf58bSPtsBt0rWAy2Xop6xExAlpNM9p8" />
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
         </Head>

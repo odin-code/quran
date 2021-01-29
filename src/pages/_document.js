@@ -20,19 +20,30 @@ export default class MyDocument extends Document {
   }
 
   render() {
+      const GA_MEASUREMENT_ID = 'G-7MSLV1M20G'; // Paste your GTAG here
+
     return (
       <html lang="id">
         <Head>
           <title>Claudmedia</title>
           <meta name="google-site-verification" content="_zZfgHu-2NjAf58bSPtsBt0rWAy2Xop6xExAlpNM9p8" />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MSLV1M20G"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-7MSLV1M20G');
-          </script>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          />
+          <script
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_MEASUREMENT_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `,
+            }}
+          />
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
         </Head>

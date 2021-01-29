@@ -5,7 +5,7 @@ import { Button } from "antd";
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
-import { Wrapper } from "./style";
+import { Wrapper } from "../styles/pages/home/style";
 
 //style
 

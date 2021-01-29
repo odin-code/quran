@@ -10,12 +10,56 @@ import { Wrapper } from "../styles/pages/home/style";
 //style
 
 export default function Home({ appName }) {
-  const [whatsap, setwhatsap] = useState("https://api.whatsapp.com/send?phone=81932622629&text=Assalamu'alaikum%20,%20Saya%20mendapatkan%20info%20dari%20website%20claudmedia");
+  const [whatsap, setwhatsap] = useState(
+    "https://api.whatsapp.com/send?phone=81932622629&text=Assalamu'alaikum%20,%20Saya%20mendapatkan%20info%20dari%20website%20claudmedia"
+  );
 
   return (
     <>
       <Head>
-        <title>Home {appName}</title>
+        <title>
+          Claudmedia — Creative & Digital Agency Based in Jakarta, Indonesia{" "}
+        </title>
+        <meta
+          name="title"
+          content="Claudmedia — Creative & Digital Agency Based in Jakarta, Indonesia "
+        />
+        <meta
+          name="description"
+          content="Claudmedia Is a Digital  Agency Based In Jakarta, Indonesia. We Provide Website development ,  Website Design and Brand , Mobile development"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://claudmedia.com/" />
+        <meta
+          property="og:title"
+          content="Claudmedia — Creative & Digital Agency Based in Jakarta, Indonesia "
+        />
+        <meta
+          property="og:description"
+          content="Claudmedia Is a Digital  Agency Based In Jakarta, Indonesia. We Provide Website development ,  Website Design and Brand , Mobile development"
+        />
+        <meta
+          property="og:image"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        />
+        <link rel="canonical" href="https://claudmedia.com/" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://claudmedia.com/" />
+        <meta
+          property="twitter:title"
+          content="Claudmedia — Creative & Digital Agency Based in Jakarta, Indonesia "
+        />
+        <meta
+          property="twitter:description"
+          content="Claudmedia Is a Digital  Agency Based In Jakarta, Indonesia. We Provide Website development ,  Website Design and Brand , Mobile development"
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        />
+
       </Head>
       <Layout>
         <Wrapper>
@@ -57,21 +101,33 @@ export default function Home({ appName }) {
                     <div className="content-2">
                       <div className="content-2_list">
                         <div className="content-2_list-item">
-                          <img src="/img/web-dev.png" alt="Web Development" title="Web Development" />
+                          <img
+                            src="/img/web-dev.png"
+                            alt="Web Development"
+                            title="Web Development"
+                          />
                           <div className="desc">
                             <h5>Web Development</h5>
                             <span>lorem lorem ipusma</span>
                           </div>
                         </div>
                         <div className="content-2_list-item">
-                          <img src="/img/mobile-dev.png" alt="Mobile Development" title="Mobile Development" />
+                          <img
+                            src="/img/mobile-dev.png"
+                            alt="Mobile Development"
+                            title="Mobile Development"
+                          />
                           <div className="desc">
                             <h5>Mobile Development</h5>
                             <span>lorem lorem ipusma</span>
                           </div>
                         </div>
                         <div className="content-2_list-item">
-                          <img src="/img/brand-dev.png" alt="Branding Identity" title="Branding Identity" />
+                          <img
+                            src="/img/brand-dev.png"
+                            alt="Branding Identity"
+                            title="Branding Identity"
+                          />
                           <div className="desc">
                             <h5>Branding Identity</h5>
                             <span>lorem lorem ipusma</span>
@@ -96,7 +152,7 @@ export default function Home({ appName }) {
                 </p>
                 <div className="btn-content">
                   <Link href={whatsap}>
-                    <a target="_blank" >Let's Talk</a>
+                    <a target="_blank">Let's Talk</a>
                   </Link>
                 </div>
               </div>
@@ -115,7 +171,11 @@ export default function Home({ appName }) {
                       </span>
                       <div className="desc-list">
                         <div className="desc-list_item">
-                          <img src="/img/experience.png" alt="Experience" title="Experience"/>
+                          <img
+                            src="/img/experience.png"
+                            alt="Experience"
+                            title="Experience"
+                          />
                           <div className="content">
                             <h5>Experience</h5>
                             <p>
@@ -125,7 +185,11 @@ export default function Home({ appName }) {
                           </div>
                         </div>
                         <div className="desc-list_item">
-                          <img src="/img/comfortable.png" alt="Comfortable" title="Comfortable"/>
+                          <img
+                            src="/img/comfortable.png"
+                            alt="Comfortable"
+                            title="Comfortable"
+                          />
                           <div className="content">
                             <h5>Comfortable</h5>
                             <p>
@@ -135,7 +199,11 @@ export default function Home({ appName }) {
                           </div>
                         </div>
                         <div className="desc-list_item">
-                          <img src="/img/easy.png" alt="Easy Communication" title="Easy Communication"/>
+                          <img
+                            src="/img/easy.png"
+                            alt="Easy Communication"
+                            title="Easy Communication"
+                          />
                           <div className="content">
                             <h5>Easy Communication</h5>
                             <p>
@@ -151,7 +219,8 @@ export default function Home({ appName }) {
                     <img
                       src="/img/bitmap.png"
                       className="img-fluid img-sction-4"
-                      alt="bitmap" title="bitmap"
+                      alt="bitmap"
+                      title="bitmap"
                     />
                   </div>
                 </div>
@@ -171,10 +240,18 @@ export default function Home({ appName }) {
                 <div className="slider-5">
                   <div className="slide-list">
                     <div className="slide-list_item">
-                      <img src="/img/client/sariayu-logo.png" alt="sariayu martathilaar" title="sariayu martathilaar"/>
+                      <img
+                        src="/img/client/sariayu-logo.png"
+                        alt="sariayu martathilaar"
+                        title="sariayu martathilaar"
+                      />
                     </div>
                     <div className="slide-list_item">
-                      <img src="/img/client/stickearn.png" alt="stickearn" title="stickearn"/>
+                      <img
+                        src="/img/client/stickearn.png"
+                        alt="stickearn"
+                        title="stickearn"
+                      />
                     </div>
                   </div>
                 </div>
@@ -188,10 +265,15 @@ export default function Home({ appName }) {
                     <div className="col-md-6">
                       <div className="form-email">
                         <div className="select-input">
-                          <input placeholder="Drop your email here..." /> 
+                          <input placeholder="Drop your email here..." />
                           <Button type="primary">
-                            <img src="/img/ic-send.png" alt="kirim pesan" title="kirim pesan"/>
-                            Send</Button>
+                            <img
+                              src="/img/ic-send.png"
+                              alt="kirim pesan"
+                              title="kirim pesan"
+                            />
+                            Send
+                          </Button>
                         </div>
                       </div>
                     </div>

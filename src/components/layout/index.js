@@ -12,6 +12,7 @@ const Layout = ({ children }) => {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
 
         {/* Mobile Configurations */}
         <meta
@@ -25,9 +26,12 @@ const Layout = ({ children }) => {
           name="google-site-verification"
           content="jGgc8PucdJuqZ2rfOb35bKBqOjkhFIJTFDWSykydy_M"
         />
-        <link rel="shortcut icon" href="#" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="#" />
-        <link rel="icon" type="image/png" href="#" sizes="32x32" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>        
+        <link rel="manifest" href="/site.webmanifest"/>
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+        <meta name="msapplication-TileColor" content="#da532c"/>
+        <meta name="theme-color" content="#ffffff"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"

@@ -25,8 +25,7 @@ const Works = () => {
                     <h1>You can show our great work everyday</h1>
                     <p>
                       We provide one stop IT Solution services from concepting
-                      until production for Website & Mobile
-                      Development.
+                      until production for Website & Mobile Development.
                     </p>
                   </div>
                 </div>
@@ -56,10 +55,20 @@ const Works = () => {
                               <div className="row">
                                 <div className="col-md-12">
                                   <div className="list-site_item">
-                                  <figure className="snip1300 mx-0">
-                                      <img className="w-100 overblack" src="https://www.vhiweb.com/storage/app/uploads/public/5c5/42c/e2e/thumb_73_0_0_0_0_auto.png" alt="TurEZ" />
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-turez.png"
+                                        alt="Turez.id"
+                                        title="Turez.id"
+                                      />
                                       <div className="visit-icon">
-                                        <img className="bright" src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg" alt="visit" />
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                          title="visit"
+                                        />
                                       </div>
                                       <div class="title-project">
                                         <p>TurEZ</p>
@@ -69,10 +78,104 @@ const Works = () => {
                                   </div>
                                 </div>
                                 <div className="col-md-12">
-                                  <div className="list-site_item"></div>
+                                  <div className="list-site_item">
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-stickearn.png"
+                                        alt="stickearn"
+                                        title="stickearn"
+                                      />
+                                      <div className="visit-icon">
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                        />
+                                      </div>
+                                      <div class="title-project">
+                                        <p>Stickearn</p>
+                                      </div>
+                                      <a href="https://stickearn.com/"></a>
+                                    </figure>
+                                  </div>
                                 </div>
                                 <div className="col-md-12">
-                                  <div className="list-site_item"></div>
+                                  <div className="list-site_item">
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-sariayu.png"
+                                        alt="sariayu"
+                                        title="sariayu"
+                                      />
+                                      <div className="visit-icon">
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                        />
+                                      </div>
+                                      <div class="title-project">
+                                        <p>Sariayu</p>
+                                      </div>
+                                      <a href="#"></a>
+                                    </figure>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="side-right">
+                            <div className="list-site">
+                              <div className="row">
+                                <div className="col-md-12">
+                                  <div className="list-site_item">
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-bpk.png"
+                                        alt="Bpk"
+                                        title="Bpk"
+                                      />
+                                      <div className="visit-icon">
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                        />
+                                      </div>
+                                      <div class="title-project">
+                                        <p>Bpk</p>
+                                      </div>
+                                      <a href="#"></a>
+                                    </figure>
+                                  </div>
+                                </div>
+                                <div className="col-md-12">
+                                  <div className="list-site_item">
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-kotex.jpg"
+                                        alt="kotex"
+                                        title="kotex"
+                                      />
+                                      <div className="visit-icon">
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                        />
+                                      </div>
+                                      <div class="title-project">
+                                        <p>Kotex</p>
+                                      </div>
+                                      <a href="#"></a>
+                                    </figure>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -82,10 +185,187 @@ const Works = () => {
                     </div>
                   </TabPane>
                   <TabPane tab="Company Profile" key="2">
-                    <div className="tabs-item"></div>
+                    <div className="tabs-item">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <div className="side-left">
+                            <div className="list-site">
+                              <div className="row">
+                                <div className="col-md-12">
+                                  <div className="list-site_item">
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-stickearn.png"
+                                        alt="stickearn"
+                                        title="stickearn"
+                                      />
+                                      <div className="visit-icon">
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                        />
+                                      </div>
+                                      <div class="title-project">
+                                        <p>Stickearn</p>
+                                      </div>
+                                      <a href="https://stickearn.com/"></a>
+                                    </figure>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="side-right">
+                            <div className="list-site">
+                              <div className="row">
+                                <div className="col-md-12">
+                                  <div className="list-site_item">
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-sariayu.png"
+                                        alt="sariayu"
+                                        title="sariayu"
+                                      />
+                                      <div className="visit-icon">
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                        />
+                                      </div>
+                                      <div class="title-project">
+                                        <p>Sariayu</p>
+                                      </div>
+                                      <a href="#"></a>
+                                    </figure>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </TabPane>
                   <TabPane tab="E-commerce" key="3">
-                    <div className="tabs-item"></div>
+                    <div className="tabs-item">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <div className="side-left">
+                            <div className="list-site">
+                              <div className="row">
+                                <div className="col-md-12">
+                                  <div className="list-site_item">
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-turez.png"
+                                        alt="Turez.id"
+                                        title="Turez.id"
+                                      />
+                                      <div className="visit-icon">
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                          title="visit"
+                                        />
+                                      </div>
+                                      <div class="title-project">
+                                        <p>TurEZ</p>
+                                      </div>
+                                      <a href="#"></a>
+                                    </figure>
+                                  </div>
+                                </div>
+                                <div className="col-md-12">
+                                  <div className="list-site_item">
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-sariayu.png"
+                                        alt="sariayu"
+                                        title="sariayu"
+                                      />
+                                      <div className="visit-icon">
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                        />
+                                      </div>
+                                      <div class="title-project">
+                                        <p>Sariayu</p>
+                                      </div>
+                                      <a href="#"></a>
+                                    </figure>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="side-right">
+                            <div className="list-site">
+                              <div className="row">
+                                <div className="col-md-12">
+                                  <div className="list-site_item">
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-bpk.png"
+                                        alt="Bpk"
+                                        title="Bpk"
+                                      />
+                                      <div className="visit-icon">
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                        />
+                                      </div>
+                                      <div class="title-project">
+                                        <p>Bpk</p>
+                                      </div>
+                                      <a href="#"></a>
+                                    </figure>
+                                  </div>
+                                </div>
+                                <div className="col-md-12">
+                                  <div className="list-site_item">
+                                    <figure className="snip1300 mx-0">
+                                      <img
+                                        className="w-100 overblack"
+                                        src="/img/client/thumb-kotex.jpg"
+                                        alt="kotex"
+                                        title="kotex"
+                                      />
+                                      <div className="visit-icon">
+                                        <img
+                                          className="bright"
+                                          src="https://www.vhiweb.com/themes/vhiweb/assets/images/icon/visit-icon.svg"
+                                          alt="visit"
+                                        />
+                                      </div>
+                                      <div class="title-project">
+                                        <p>Kotex</p>
+                                      </div>
+                                      <a href="#"></a>
+                                    </figure>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </TabPane>
                 </Tabs>
               </div>

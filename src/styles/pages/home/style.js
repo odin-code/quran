@@ -127,10 +127,9 @@ export const Wrapper = styled.div`
   }
   .section-3 {
     background: url(/img/bg-section-3.png);
-    height: 800px;
+    height: 700px;
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-bottom: 70px;
     margin-top: 80px;
     &_content {
       width: 50%;
@@ -174,12 +173,14 @@ export const Wrapper = styled.div`
     }
   }
   .section-4 {
-    background: url("/img/bg-section-4.png");
-    background-size: 100%;
+    background: url(/img/bg-section-4.png);
+    background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 70px;
     margin-top: 120px;
     padding-bottom: 83px;
+    display: block;
+    height: 100%;
     .img-sction-4 {
       position: relative;
       top: 110px;
@@ -191,7 +192,7 @@ export const Wrapper = styled.div`
           font-style: normal;
           font-weight: bold;
           font-size: 48px;
-          line-height: 72px;
+          line-height: 47px;
           color: #333333;
           margin-bottom: 20px;
         }
@@ -249,7 +250,7 @@ export const Wrapper = styled.div`
       text-align: center;
       display: block;
       .desc {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
         h4 {
           font-family: Roboto;
           font-style: normal;

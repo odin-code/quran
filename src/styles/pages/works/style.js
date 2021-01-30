@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   .section-1 {
     background: url(/img/bg-work.png);
     display: block;
-    height: 800px;
+    height: 700px;
     background-size: 100%;
     background-repeat: no-repeat;
 

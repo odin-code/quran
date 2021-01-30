@@ -59,7 +59,6 @@ export default function Home({ appName }) {
           property="twitter:image"
           content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
         />
-
       </Head>
       <Layout>
         <Wrapper>
@@ -70,8 +69,8 @@ export default function Home({ appName }) {
                   Innovative and intelligent technology solutions and services
                 </h1>
                 <p>
-                  We provide one stop IT Solution services from concepting until
-                  production for Website & Mobile Development.
+                  Strong management and security for powerful features. Clean
+                  and creative design for you.
                 </p>
                 <div className="btn-content">
                   <Link href={whatsap}>
@@ -90,10 +89,10 @@ export default function Home({ appName }) {
                       <h4>Our Service</h4>
                       <h2>Create your awesome digital product with us.</h2>
                       <p>
-                        Si sine causa, mox videro; interea hoc epicurus in bonis
-                        sit numeranda nec me tamen laudandis maioribus meis
-                        corrupisti nec me ab illo inventore veritatis et
-                        voluptatem accusantium doloremque laudantium.
+                        Using cutting edge technologies to build scalable
+                        solutions, innovating where necessary. Never being
+                        restricted to a single solution, we like to break new
+                        ground.
                       </p>
                     </div>
                   </div>
@@ -108,7 +107,11 @@ export default function Home({ appName }) {
                           />
                           <div className="desc">
                             <h5>Web Development</h5>
-                            <span>lorem lorem ipusma</span>
+                            <span>
+                              Operational improvements through technology
+                              enhancements and/or service functions, we provide
+                              a fresh lens in helping you achieve your goals.
+                            </span>
                           </div>
                         </div>
                         <div className="content-2_list-item">
@@ -119,7 +122,11 @@ export default function Home({ appName }) {
                           />
                           <div className="desc">
                             <h5>Mobile Development</h5>
-                            <span>lorem lorem ipusma</span>
+                            <span>
+                              Operational improvements through technology
+                              enhancements and/or service functions, we provide
+                              a fresh lens in helping you achieve your goals.
+                            </span>
                           </div>
                         </div>
                         <div className="content-2_list-item">
@@ -129,8 +136,14 @@ export default function Home({ appName }) {
                             title="Branding Identity"
                           />
                           <div className="desc">
-                            <h5>Branding Identity</h5>
-                            <span>lorem lorem ipusma</span>
+                            <h5>Visual Design and Branding</h5>
+                            <span>
+                              We believe that technology works for human and not
+                              the other way around. Crafting of digital
+                              experiences through interaction design by
+                              cultivating understanding and empathy for
+                              end-users.
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -145,10 +158,8 @@ export default function Home({ appName }) {
               <div className="section-3_content">
                 <h2>Transform your business with us right now</h2>
                 <p>
-                  Si sine causa, mox videro; interea hoc epicurus in bonis sit
-                  numeranda nec me tamen laudandis maioribus meis corrupisti nec
-                  me ab illo inventore veritatis et voluptatem accusantium
-                  doloremque laudantium.
+                  We Help Entrepreneurs / Companies / Founder Execute Impactful
+                  Website & Mobile Apps
                 </p>
                 <div className="btn-content">
                   <Link href={whatsap}>
@@ -164,51 +175,125 @@ export default function Home({ appName }) {
                 <div className="row">
                   <div className="col-md-6">
                     <div className="desc">
-                      <h4>Top four the reason why you should choosing us.</h4>
+                      <h4>
+                        We work together with our client to execute impactful
+                        websites and apps.
+                      </h4>
                       <span>
-                        In quo quaerimus, non numquam eius modi tempora
-                        incidunt,
+                        Thus we work closely with Entrepreneurs, Founders and
+                        Companies, altogether to establish an iterative process
+                        of design, development and ongoing optimization. We join
+                        forces with our clients and work as one, see our process.
                       </span>
                       <div className="desc-list">
                         <div className="desc-list_item">
                           <img
-                            src="/img/experience.png"
+                            src="/img/rec.png"
                             alt="Experience"
                             title="Experience"
                           />
                           <div className="content">
-                            <h5>Experience</h5>
+                            <h5>Requirement Gathering</h5>
                             <p>
-                              Probabo, inquit, modo ista sis aequitate, quam
-                              interrogare aut in voluptate ponit.
+                              This phase is critical to the success of the
+                              project. Expectations need to be fleshed out in
+                              great detail and documented. This is an iterative
+                              process with much communication taking place
+                              between stake-holders, end users and the project
+                              team.
                             </p>
                           </div>
                         </div>
                         <div className="desc-list_item">
                           <img
-                            src="/img/comfortable.png"
+                            src="/img/analisis.png"
                             alt="Comfortable"
                             title="Comfortable"
                           />
                           <div className="content">
-                            <h5>Comfortable</h5>
+                            <h5>Analysis</h5>
                             <p>
-                              Probabo, inquit, modo ista sis aequitate, quam
-                              interrogare aut in voluptate ponit.
+                              During this second stage, the system is analyzed
+                              in order to properly generate the models and
+                              business logic that will be used in the
+                              application. This stage largely covers technical
+                              design requirements, such as programming language,
+                              data layers, services, etc.
                             </p>
                           </div>
                         </div>
                         <div className="desc-list_item">
                           <img
-                            src="/img/easy.png"
+                            src="/img/ui.png"
                             alt="Easy Communication"
                             title="Easy Communication"
                           />
                           <div className="content">
-                            <h5>Easy Communication</h5>
+                            <h5>UI/UX Design</h5>
                             <p>
-                              Probabo, inquit, modo ista sis aequitate, quam
-                              interrogare aut in voluptate ponit.
+                              After the FSD (Functional Specification Document)
+                              has been approved by both sides, then we will
+                              enter the design mock-up phase. The design
+                              foundation will follow the wireframe, business
+                              flow and use cases that are contained in the
+                              functional specifications document.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="desc-list_item">
+                          <img
+                            src="/img/develop.png"
+                            alt="Easy Communication"
+                            title="Easy Communication"
+                          />
+                          <div className="content">
+                            <h5>Development</h5>
+                            <p>
+                              This phase is the actual coding by the development
+                              team. Implementing all models, business logic, and
+                              service integrations that were specified in prior
+                              stages. After each stage, the developer may
+                              demonstrate the work accomplished to the Business
+                              Analyst and tweaks and enhancement may be
+                              required. This normally the longest phase compare
+                              to others phases.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="desc-list_item">
+                          <img
+                            src="/img/testing.png"
+                            alt="Easy Communication"
+                            title="Easy Communication"
+                          />
+                          <div className="content">
+                            <h5>Testing</h5>
+                            <p>
+                              Once the application is migrated to a test
+                              environment, different types of testing will be
+                              performed including integration and system
+                              testing. User acceptance testing is the last part
+                              of testing and is performed by the end users to
+                              ensure the system meets their expectations. At
+                              this point defects may be found and more work may
+                              be required in the analysis, design or coding.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="desc-list_item">
+                          <img
+                            src="/img/deploy.png"
+                            alt="Easy Communication"
+                            title="Easy Communication"
+                          />
+                          <div className="content">
+                            <h5>Deployment & Maintenance</h5>
+                            <p>
+                              Finally, the application is ready for deployment
+                              to a production environment. This stage entails
+                              not jest the deployment of the application, but
+                              also subsequent support and maintenance that may
+                              be required to keep it functional and up-to-date
                             </p>
                           </div>
                         </div>
@@ -232,10 +317,6 @@ export default function Home({ appName }) {
               <div className="section-5_content">
                 <div className="desc">
                   <h4>Some of our clients who have collaborated with us</h4>
-                  <p>
-                    In oculis quidem exercitus quid ex ea voluptate et impetus
-                    quo pertineant non numquam
-                  </p>
                 </div>
                 <div className="slider-5">
                   <div className="slide-list">

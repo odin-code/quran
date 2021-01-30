@@ -2,31 +2,66 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   .section-1 {
-    background: url(/img/bg-work.png);
+    @media (min-width: 992px) {
+      background: url(/img/bg-work.png);
+      height: 700px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px) {
+      background: url(/img/bg-work-m.png);
+      height: 829px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
     display: block;
-    height: 700px;
-    background-size: 100%;
-    background-repeat: no-repeat;
 
     &_content {
-      padding-top: 275px;
+      @media (min-width: 992px) {
+        padding-top: 275px;
+      }
+
+      @media (max-width: 768px) {
+        padding-top: 180px;
+      }
       .desc {
+        @media (max-width: 768px) {
+          margin-bottom: 80px;
+        }
         h1 {
           font-family: Roboto;
           font-style: normal;
           font-weight: bold;
-          font-size: 48px;
-          line-height: 73px;
           color: #ffffff;
           margin-bottom: 30px;
+          @media (min-width: 992px) {
+            font-size: 48px;
+            line-height: 73px;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+          }
         }
         p {
           font-family: Roboto;
           font-style: normal;
           font-weight: normal;
-          font-size: 20px;
-          line-height: 32px;
+
           color: #eeeeee;
+          @media (min-width: 992px) {
+            font-size: 20px;
+            line-height: 32px;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+          }
         }
       }
       .img-side {
@@ -44,7 +79,9 @@ export const Wrapper = styled.div`
           .side-left {
           }
           .side-right {
-            margin-top: 80px;
+            @media (min-width: 992px) {
+              margin-top: 80px;
+            }
           }
           .list-site {
             &_item {

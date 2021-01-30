@@ -26,7 +26,22 @@ export const Wrapper = styled.div`
       display: flex;
       justify-content: space-between;
     }
+    .hamberger-menu {
+      @media (min-width: 992px) {
+        display: none;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
     .btn-header {
+      @media (min-width: 992px) {
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+       display: none;
+      }
       .btn-active {
         background: #5B7CFD !important;
         color: #fff !important;

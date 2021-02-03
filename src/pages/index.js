@@ -162,8 +162,8 @@ export default function Home({ appName }) {
                   Website & Mobile Apps
                 </p>
                 <div className="btn-content">
-                  <Link href={whatsap}>
-                    <a target="_blank">Let's Talk</a>
+                  <Link href="/works">
+                    <a target="_blank">See Our Work</a>
                   </Link>
                 </div>
               </div>

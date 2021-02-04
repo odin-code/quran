@@ -69,7 +69,7 @@ const Works = () => {
                 <div className="row">
                   <div className="col-md-6">
                     <div className="desc">
-                      <h1>You can show our great work everyday</h1>
+                      <h1>You can see our great work everyday</h1>
                       <p>
                         We provide one stop IT Solution services from concepting
                         until production for Website & Mobile Development.

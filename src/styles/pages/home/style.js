@@ -480,7 +480,7 @@ export const Wrapper = styled.div`
                background: url(/img/bg-send.png);
                background-repeat: no-repeat;
                background-size: 100%;
-               height: 320px;
+               height: 300px;
                padding: 80px 50px 0px 50px;
 
             }

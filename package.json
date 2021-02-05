@@ -21,6 +21,7 @@
     "bootstrap": "^4.6.0",
     "chalk": "^4.1.0",
     "esm": "^3.2.25",
+    "firebase": "^8.2.6",
     "next": "9.5.2",
     "next-build-id": "^3.0.0",
     "next-images": "^1.7.0",

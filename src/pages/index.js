@@ -10,13 +10,13 @@ import {
 
 // Next
 import Head from "next/head";
-import Layout from "../components/layout";
+import Link from 'next/link'
+
 import {
    Wrapper
-} from "../styles/pages/home/style";
+} from "../styles/pages/home/style.js";
 
 //style
-import "../styles/css/globals.css";
 
 export default function Home({
    appName
@@ -70,7 +70,59 @@ export default function Home({
          </Head>
          {/* <Layout> */}
          <Wrapper>
-            
+            <div className="container mx-auto bg-gray-50">
+               <div className="w-full bg-green-500 md:h-40 relative block p-7 rounded-b-2xl">
+                  <span className="text-white text-base font-semibold">Assalamu'alaikum Akhi / Ukhti</span>
+                  <div className="shadow absolute bg-white rounded-lg block md:h-36 md:w-11/12 top-16 p-7">
+                     <ul className="flex items-center justify-center">
+                        <li className="mx-8">
+                           <Link href="/quran">
+                              <a>
+                                 <img src="img/quran.svg" height={42} width={42}/>
+                                 <span className="text-center text-gray-600 md:text-md pt-2 block">Quran</span>
+                              </a>
+                           </Link>
+                        </li>
+                        <li className="mx-8 text-center">
+                           <Link href="/">
+                              <a>
+                                 <img src="img/praying-hand.svg" height={42} width={42}/>
+                                 <span className="text-center text-gray-600 md:text-md pt-2 block">Doa</span>
+                              </a>
+                           </Link>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div className="w-full h-full relative block mt-20 p-7">
+                  <span className="block w-full md:text-xl font-semibold">Feed</span>
+                  <div className="pt-4">
+                     <div className="shadow w-full md:h-full bg-white rounded-lg p-5">
+                        <img className="w-full rounded-lg" src="https://via.placeholder.com/335x155" />
+                        <div className="pt-5">
+                           <p className="md:text-base text-gray-500 font-normal">
+                           *Free! 💵*⁣<br/>
+                           *Terbuka untuk Siswa-Siswi SMP/SMA/Sederajat*⁣<br/>
+                           <br/>⁣
+                           Ayo tunggu apalagi bagi kamu yang berstatus pelajar ayo segera daftar disini👇👇<br/>
+                           </p>
+                        </div>
+                     </div>
+                     <div className="shadow w-full md:h-full bg-white rounded-lg p-5 mt-5">
+                        <img className="w-full rounded-lg" src="https://via.placeholder.com/335x155" />
+                        <div className="pt-5">
+                           <p className="md:text-base text-gray-500 font-normal">
+                              *Free! 💵*⁣<br/>
+                              *Terbuka untuk Siswa-Siswi SMP/SMA/Sederajat*⁣<br/>
+                              <br/>⁣
+                              Ayo tunggu apalagi bagi kamu yang berstatus pelajar ayo segera daftar disini👇👇<br/>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </Wrapper>
          {/* </Layout> */}
       </>

@@ -71,23 +71,23 @@ export default function Home({
          {/* <Layout> */}
          <Wrapper>
             <div className="container mx-auto bg-gray-50">
-               <div className="w-full bg-green-500 md:h-40 relative block p-7 rounded-b-2xl">
+               <div className="w-full bg-green-500 h-40 relative block p-7 rounded-b-2xl">
                   <span className="text-white text-base font-semibold">Assalamu'alaikum Akhi / Ukhti</span>
-                  <div className="shadow absolute bg-white rounded-lg block md:h-36 md:w-11/12 top-16 p-7">
+                  <div className="shadow absolute bg-white rounded-lg block md:h-36 card-floating top-20 p-7">
                      <ul className="flex items-center justify-center">
                         <li className="mx-8">
                            <Link href="/quran">
                               <a>
-                                 <img src="img/quran.svg" height={42} width={42}/>
-                                 <span className="text-center text-gray-600 md:text-md pt-2 block">Quran</span>
+                                 <img className='m-auto' src="img/quran.svg" height={32} width={32}/>
+                                 <span className="text-center text-gray-600 text-sm md:text-base pt-2 block">Quran</span>
                               </a>
                            </Link>
                         </li>
                         <li className="mx-8 text-center">
                            <Link href="/">
                               <a>
-                                 <img src="img/praying-hand.svg" height={42} width={42}/>
-                                 <span className="text-center text-gray-600 md:text-md pt-2 block">Doa</span>
+                                 <img className='m-auto' src="img/praying-hand.svg" height={32} width={32}/>
+                                 <span className="text-center text-gray-600 text-sm md:text-base pt-2 block">Doa</span>
                               </a>
                            </Link>
                         </li>
@@ -95,7 +95,7 @@ export default function Home({
                   </div>
                </div>
 
-               <div className="w-full h-full relative block mt-20 p-7">
+               <div className="w-full h-full relative block mt-10 md:mt-20 p-7">
                   <span className="block w-full md:text-xl font-semibold">Feed</span>
                   <div className="pt-4">
                      <div className="shadow w-full md:h-full bg-white rounded-lg p-5">

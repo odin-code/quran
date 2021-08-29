@@ -73,7 +73,7 @@ class quran extends Component {
 					content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
 					/>
 				</Head>
-				<div class="bg-gray-50">
+				<div class="body">
 					<HeaderBack
 						actionBackLink="/quran"
 						titlePage={`${quranData.data.englishName} [ ${quranData.data.name} ] `}
@@ -89,7 +89,7 @@ class quran extends Component {
 												{item.numberInSurah}
 											</span>
 											<div className="block w-full text-right">
-												<span className="text-xl font-medium	">
+												<span className="text-3xl font-medium font-arabic">
 												{item.text}
 												</span>
 											</div>

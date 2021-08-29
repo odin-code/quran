@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'lpmq';
+  src: url('/public/font/IsepMisbah.ttf') format('opentype');
+  font-display: swap;
+}
+
+.font-arabic {
+  font-family: 'lpmq', sans-serif;
+  line-height: 2;
+}
+
 html,
 body {
   padding: 0;
-  max-width: 640px;
-  margin: 0 auto !important;
+  margin: 0;
   font-family: 'Poppins', sans-serif !important;
 }
 
@@ -20,5 +30,40 @@ a {
 }
 
 .body {
-  width: 640px;
+  height: 100%;
+  padding: 0;
+  max-width: 444px;
+  min-height: 100vh;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+  padding-bottom: 56px;
+  background-color: #FAFAFA;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    width: 58%;
+  }
+}
+
+@media (min-width: 1023px) {
+  .header {
+    width: 43.2%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    width: 24.2%;
+  }
+}
+

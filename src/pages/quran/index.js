@@ -11,6 +11,8 @@ import {
 import Head from "next/head";
 import Link from 'next/link';
 
+import { Wrapper } from '../../styles/pages/quran';
+
 //component
 import HeaderBack from '../../components/headerback';
 
@@ -71,7 +73,7 @@ class quran extends Component {
 					content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
 					/>
 				</Head>
-				<div class="bg-gray-50">
+				<div class="body">
 					<HeaderBack
 						actionBackLink="/"
 						titlePage="Quran"
@@ -83,19 +85,19 @@ class quran extends Component {
 								return(
 									<Link href={`/quran-detail/${item.number}`} key={index}>
 										<a className={`w-full bg-white block h-full shadow text-xl p-4 flex ${item.number == 1 ? 'mt-0' : 'mt-4'}`}>
-											<span className="block mr-10 text-base font-medium	">
+											<span className="block mr-10 text-xs md:text-base font-medium	">
 												{item.number}
 											</span>
-											<div className="block md:w-8/12">
-												<span className="block text-base font-medium	">
+											<div className="block w-8/12">
+												<span className="block text-xs md:text-base font-medium	">
 													{`${item.englishName} (${item.numberOfAyahs})`}
 												</span>
-												<span className="block text-base font-light">
+												<span className="block text-xs md:text-base font-light">
 													{item.englishNameTranslation}
 												</span>
 											</div>
 											<div className="block w-full text-right">
-												<span className="text-xl font-medium	">
+												<span className="text-xl font-medium font-arabic">
 												{item.name}
 												</span>
 											</div>
@@ -107,6 +109,7 @@ class quran extends Component {
 						}
 						
 					</div>
+					
 				</div>
 			</>
 		)

@@ -26,7 +26,6 @@ class quran extends Component {
 		const {
 			quranData
 		} = this.props;
-		console.log(quranData)
 		return(
 			<>
 				<Head>

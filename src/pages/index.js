@@ -70,7 +70,7 @@ export default function Home({
          </Head>
          {/* <Layout> */}
          <Wrapper>
-            <div className="container mx-auto bg-gray-50">
+            <div className="mx-auto bg-gray-50">
                <div className="w-full bg-green-500 h-40 relative block p-7 rounded-b-2xl">
                   <span className="text-white text-base font-semibold">Assalamu'alaikum Akhi / Ukhti</span>
                   <div className="shadow absolute bg-white rounded-lg block md:h-36 card-floating top-20 p-7">

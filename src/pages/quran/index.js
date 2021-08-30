@@ -26,6 +26,8 @@ class quran extends Component {
 		const {
 			quranData
 		} = this.props;
+
+		console.log(quranData)
 		return(
 			<>
 				<Head>
@@ -80,24 +82,24 @@ class quran extends Component {
 					<div className="pt-20 pl-5 pr-5 mb-4">
 						{
 							quranData && 
-							quranData.data.map((item, index) => {
+							quranData.map((item, index) => {
 								return(
-									<Link href={`/quran-detail/${item.number}`} key={index}>
-										<a className={`w-full bg-white block h-full shadow text-xl p-4 flex ${item.number == 1 ? 'mt-0' : 'mt-4'}`}>
+									<Link href={`/quran-detail/${item.nomor}`} key={index}>
+										<a className={`w-full bg-white block h-full shadow text-xl p-4 flex ${item.nomor == 1 ? 'mt-0' : 'mt-4'}`}>
 											<span className="block mr-10 text-xs md:text-base font-medium	">
-												{item.number}
+												{item.nomor}
 											</span>
 											<div className="block w-8/12">
 												<span className="block text-xs md:text-base font-medium	">
-													{`${item.englishName} (${item.numberOfAyahs})`}
+													{`${item.nama_latin} (${item.jumlah_ayat})`}
 												</span>
 												<span className="block text-xs md:text-base font-light">
-													{item.englishNameTranslation}
+													{item.arti}
 												</span>
 											</div>
-											<div className="block w-full text-right">
+											<div className="block w-3/12 text-right">
 												<span className="text-xl font-medium font-arabic">
-												{item.name}
+													{item.nama}
 												</span>
 											</div>
 										</a>
@@ -116,7 +118,7 @@ class quran extends Component {
 }
 
 export async function getStaticProps() {
-	const res = await fetch('http://api.alquran.cloud/v1/surah')
+	const res = await fetch('https://equran.id/api/surat')
 	const quranData = await res.json()
  
 	return {

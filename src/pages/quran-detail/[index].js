@@ -6,15 +6,17 @@ import {
 	Button,
 	notification
 } from "antd";
+import ReactAudioPlayer from 'react-audio-player';
 
 // Next
 import Head from "next/head";
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 
-
 //component
 import HeaderBack from '../../components/headerback';
+
+const { convert } = require('html-to-text');
 
 class quran extends Component {
 
@@ -75,25 +77,58 @@ class quran extends Component {
 				<div class="body">
 					<HeaderBack
 						actionBackLink="/quran"
-						titlePage={`${quranData.data.englishName} [ ${quranData.data.name} ] `}
+						titlePage={`${quranData.nama_latin} [ ${quranData.nama} ] `}
 					/>
 					<div className="pt-20 pl-5 pr-5 mb-4">
+						<div className={`w-full bg-white block h-full shadow text-xl p-4 mb-4`}>
+							<span className="block mr-10 text-lg font-medium font-arabic">
+								{quranData.nama_latin}{`(${quranData.nama}) - ${quranData.tempat_turun}`}
+							</span>
+							<div className="mt-3 z-0">
+								<ReactAudioPlayer
+									className="w-full"
+									src={quranData.audio}
+									autoPlay={false}
+									controls
+								/>
+							</div>
+							<div className="block w-full text-left mt-3">
+								<span className="text-sm font-normal">
+									{'Arti: ' + quranData.arti}
+									<br/>
+									{'Penjelesan: ' + convert(quranData.deskripsi)}
+								</span>
+							</div>
+						</div>
+
 						{
 							quranData && 
-							quranData.data.ayahs.map((item, index) => {
+							quranData.ayat.map((item, index) => {
 								return(
-									<Link href="javascript:void(0)" key={index}>
-										<a className={`w-full bg-white block h-full shadow text-xl p-4 flex ${item.number == 1 ? 'mt-0' : 'mt-4'}`}>
+									<div className={`w-full bg-white block h-full p-4 shadow ${item.id == 1 ? 'mt-0' : 'mt-4'}`}>
+										<div key={index} className={`text-xl flex `}>
 											<span className="block mr-10 text-base font-medium	">
-												{item.numberInSurah}
+												{item.surah}:{ item.nomor}
 											</span>
 											<div className="block w-full text-right">
 												<span className="text-3xl font-medium font-arabic">
-												{item.text}
+													{item.ar}
 												</span>
 											</div>
-										</a>
-									</Link>
+										</div>
+										<div className="block w-full text-left mt-3">
+											<p className="text-lg font-normal italic">
+												{convert(item.tr)}
+											</p>
+										</div>
+
+										<div className="block w-full text-left mt-3">
+											<p className="text-sm font-light">
+												{item.idn}
+											</p>
+										</div>
+									</div>
+									
 								)
 							})
 							
@@ -108,7 +143,7 @@ class quran extends Component {
 
 export async function getServerSideProps(context) {
 
-	const res = await fetch(`http://api.alquran.cloud/v1/surah/${context.query.index}`)
+	const res = await fetch(`https://equran.id/api/surat/${context.query.index}`)
 	const quranData = await res.json()
  
 	return {

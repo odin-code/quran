@@ -11,7 +11,7 @@ class HeaderBack extends Component {
 		} = this.props;
 		return(
 			<>
-				<div class="bg-green-500 p-3 fixed top-0 header">
+				<div class="bg-green-500 p-3 fixed top-0 header z-10">
 					<Link href={actionBackLink}>
 						<a className="w-full block h-full text-white text-xl">
 							<i className="fa fa-angle-left mr-4"></i>

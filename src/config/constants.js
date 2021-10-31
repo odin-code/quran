@@ -21,3 +21,5 @@ export const statusUnsupportedMediaType = 415;
 
 export const statusInternalServerError = 500;
 export const statusNotImplemented = 501;
+
+export const baseUrlAPI = process.env.NEXT_PUBLIC_APP_API;

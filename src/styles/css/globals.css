@@ -9,7 +9,7 @@
 }
 
 .font-arabic {
-  font-family: 'lpmq', sans-serif;
+  font-family: 'lpmq', sans-serif !important;
   line-height: 2;
 }
 

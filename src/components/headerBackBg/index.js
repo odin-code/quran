@@ -12,11 +12,11 @@ class HeaderBack extends Component {
 		} = this.props;
 		return (
 			<>
-				<div class="bg-green-500 p-3 fixed top-0 header z-10">
+				<div class="p-3 fixed top-0 header z-10">
 					<Link href={actionBackLink}>
 						<a className="w-full block h-full text-white text-xl header-back">
 							<i className="fa fa-angle-left mr-4"></i>
-							<span className={isArabic ? "font-arabic" : "font-normal"}>{titlePage}</span>
+							<span className="font-normal">{titlePage}</span>
 						</a>
 					</Link>
 				</div>

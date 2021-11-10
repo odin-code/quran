@@ -85,4 +85,49 @@ export const Wrapper = styled.div`
       }
     }
   }
+  .item_doa {
+    &__content {
+      &-head {
+        span {
+          font-size: 18px;
+        }
+      }
+      &-body {
+        .procedure_title {
+          font-family: 'Poppins',sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          display: block;
+          text-align: left;
+          padding-bottom: 15px
+        }
+        .arabic_title {
+          font-family: 'lpmq',sans-serif !important;
+          line-height: 2;
+          font-size: 22px;
+          text-align: right;
+          display: block;
+          padding-bottom: 15px;
+        }
+        .meaning_title {
+          font-family: 'Poppins',sans-serif !important;
+          font-size: 14px;
+          font-style: italic;
+          display: block;
+          text-align: left;
+          padding-bottom: 15px
+        }
+        p {
+          word-break: break-all;
+          div {
+            font-family: 'Poppins',sans-serif !important;
+            font-size: 14px;
+            text-align: left;
+            font-style: normal;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
 `;

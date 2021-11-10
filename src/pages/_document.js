@@ -25,7 +25,6 @@ export default class MyDocument extends Document {
     return (
       <html lang="id">
         <Head>
-          <title>Muslim Life Indonesia</title>
           <meta name="google-site-verification" content="_zZfgHu-2NjAf58bSPtsBt0rWAy2Xop6xExAlpNM9p8" />
           <script
             async

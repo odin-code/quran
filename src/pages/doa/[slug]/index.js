@@ -33,7 +33,8 @@ class subCategory extends Component {
 		const {subCategory} = this.props;
 		if(subCategory) {
 			this.setState({
-				loadingSubCategoryDoa: true
+				loadingSubCategoryDoa: true,
+				dataSubCategory: subCategory
 			})
 		}
 	}
@@ -57,25 +58,22 @@ class subCategory extends Component {
 	};
 	render() {
 		const {
-			subCategory
-		} = this.props;
-		const {
 			loadingSubCategoryDoa,
 			dataSubCategory
 		} = this.state;
 		return (
 			<>
 				<Head>
-					<title>Muslim Life Indonesia - Quran</title>
-					<meta name="title" content="Muslim Life" />
-					<meta name="description" content="Muslim Life" />
+					<title>Muslim Life Indonesia - {dataSubCategory.name}</title>
+					<meta name="title" content={`Muslim Life Indonesia - ${dataSubCategory.name}`} />
+					<meta name="description" content={`Muslim Life Indonesia - ${dataSubCategory.name}`} />
 
 					<meta property="og:type" content="website" />
 					<meta property="og:url" content="https://muslimlifeindonesia.com/" />
-					<meta property="og:title" content="Muslim Life Indonesia - Quran " />
+					<meta property="og:title" content={`Muslim Life Indonesia - ${dataSubCategory.name}`} />
 					<meta
 						property="og:description"
-						content="Muslim Life Indonesia - Quran"
+						content={`Muslim Life Indonesia - ${dataSubCategory.name}`}
 					/>
 					<meta
 						property="og:image"
@@ -94,7 +92,7 @@ class subCategory extends Component {
 					/>
 					<meta
 						property="twitter:description"
-						content="Muslim Life Indonesia - Quran"
+						content={`Muslim Life Indonesia - ${dataSubCategory.name}`}
 					/>
 					<meta
 						property="twitter:image"
@@ -104,8 +102,8 @@ class subCategory extends Component {
 				<Wrapper>
 					<div className="body">
 						<HeaderBack
-							actionBackLink="/"
-							titlePage="Kumpulan Doa Sahih"
+							actionBackLink="/doa"
+							titlePage={dataSubCategory.name}
 							isArabic={false}
 						/>
 						<div className="pt-20 pl-4 pr-4 mb-4">
@@ -121,11 +119,11 @@ class subCategory extends Component {
 								<>
 									{dataSubCategory && (
 										<InfiniteScroll
-											dataLength={dataSubCategory.length} //This is important field to render the next data
+											dataLength={dataSubCategory.prayer_subcategories.length} //This is important field to render the next data
 											next={this._getMoreItemFeed}
 											hasMore={true}
 										>
-											{dataSubCategory.map((item) => {
+											{dataSubCategory.prayer_subcategories.map((item) => {
 												return (
 													<Link href={item.slug}>
 														<a
@@ -170,7 +168,7 @@ class subCategory extends Component {
 }
 
 export async function getServerSideProps(context) {
-	const res = await fetch(`${baseUrlAPI}/prayers/categories/${context.query.slug}`);
+	const res = await fetch(`${baseUrlAPI}/prayers/categories/${context.query.slug}?&_limit=10`);
 	const subCategory = await res.json();
 	const slugID = context.query.slug;
 	return {
